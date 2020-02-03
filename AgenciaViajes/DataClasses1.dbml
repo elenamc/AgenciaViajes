@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PROYECTO" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-37IA93U;Initial Catalog=PROYECTO;Integrated Security=True" SettingsObjectName="AgenciaViajes.Properties.Settings" SettingsPropertyName="PROYECTOConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CLIENTE" Member="CLIENTE">
+    <Type Name="CLIENTE">
+      <Column Name="Viaje" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NombreApell" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Destino" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FechaSalida" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="FechaVuelta" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Satisfacion" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Discapacidad" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VIAJES" Member="VIAJES">
+    <Type Name="VIAJES">
+      <Column Name="IdViaje" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Destino" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NivelSatisfacion" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Discapacidad" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
